@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 
 # Clone the dotfiles repository
 if [ ! -d "$HOME/.dotfiles" ]; then
