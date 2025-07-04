@@ -12,8 +12,6 @@ alias ga='git add'
 
 # Enable history auto-completion
 autoload -Uz compinit && compinit
-bindkey '^[[A' history-search-backward
-bindkey '^[[B' history-search-forward
 
 # Plugins
 # Install zsh-autosuggestions
@@ -27,7 +25,6 @@ PROMPT='%F{cyan}%n@%m %F{yellow}%~ %F{green}$(git_prompt_info)%f$ '
 
 # Git prompt
 autoload -Uz vcs_info
-precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '(%b)'
 zstyle ':vcs_info:*' enable git
 
